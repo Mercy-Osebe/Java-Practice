@@ -16,7 +16,8 @@ class Student3{
     public Student3(){
         rollNumber=generateRollNumber();
 
-    }public String getRollNumber(){
+    }
+    public String getRollNumber(){
         return rollNumber;
     }
 }

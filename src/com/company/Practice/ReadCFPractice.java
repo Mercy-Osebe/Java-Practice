@@ -7,7 +7,7 @@ import java.io.ObjectInputStream;
 
 public class ReadCFPractice {
     public static void main(String[] args) {try {
-        FileInputStream fis = new FileInputStream("C:/Myjava/Excercise1.txt");
+        FileInputStream fis = new FileInputStream("C:/Myjava/Excercise2.txt");
         ObjectInputStream ois=new ObjectInputStream(fis);
         Account a1;
         a1=(Account) ois.readObject();
@@ -15,7 +15,7 @@ public class ReadCFPractice {
         a2=(Account) ois.readObject();
         Account a3;
         a3=(Account) ois.readObject();
-        System.out.println(a1.name+" "+a1.accountNo+" "+a1.balance);
+        System.out.println(a1.name+" "+a1.generateNum()+" "+a1.balance);
 
 
 
